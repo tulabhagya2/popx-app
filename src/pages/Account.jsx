@@ -15,8 +15,9 @@ function Account() {
                 </div>
 
                 <div className="details">
-                    <h4>{user?.name || "Marry Doe"}</h4>
-                    <p className="email">{user?.email || "Marry@gmail.com"}</p>
+                    <h3>{user.name}</h3>
+                    <p>{user.email}</p>
+
                 </div>
             </div>
 

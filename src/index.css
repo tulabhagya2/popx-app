@@ -184,10 +184,10 @@ input[type="radio"] {
 /* BUTTONS */
 .primary {
   width: 100%;
-  padding: 5px;
+  padding: 12px;
   background: #6c25ff;
   color: #fff;
-  border: solid black;
+  border: none;
   border-radius: 6px;
   font-size: 14px;
 }
@@ -198,7 +198,7 @@ input[type="radio"] {
 
 .secondary {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background: #eee5ff;
   color: #6c25ff;
   border: none;
@@ -256,10 +256,7 @@ input[type="radio"] {
 .profile::after {
   content: "";
   position: absolute;
-  left: -20px;
-  right: -20px;
-  bottom: -15px;
-  border-top: 1px dashed #ccc;
+
 }
 
 /* DESCRIPTION */
@@ -268,6 +265,9 @@ input[type="radio"] {
   font-size: 14px;
   color: #777;
   line-height: 1.6;
+  border-bottom: 1px dashed #777;
+
+
 }
 
 /* BOTTOM LINE */
@@ -276,6 +276,6 @@ input[type="radio"] {
   padding-top: 15px;
 
   border-top: 1px dashed #ccc;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -27px;
+  margin-right: -27px;
 }

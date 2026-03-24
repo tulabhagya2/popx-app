@@ -5,15 +5,21 @@ function Register() {
     const navigate = useNavigate();
 
     const [form, setForm] = useState({
-        name: "Mary Doe",
-        phone: "Mary Doe",
-        email: "Mary Doe",
-        password: "Mary Doe",
-        company: "Mary Doe",
+        name: "",
+        phone: "",
+        email: "",
+        password: "",
+        company: "",
         agency: "yes"
     });
 
     const handleSubmit = () => {
+        if (!form.name || !form.email || !form.password) {
+            alert("Please fill required fields");
+            return;
+        }
+
+        localStorage.setItem("user", JSON.stringify(form));
         navigate("/account");
     };
 
@@ -66,12 +72,12 @@ function Register() {
 
                 <p style={{ marginTop: "15px" }}>Are you an Agency? *</p>
 
-                
+
                 <div className="radio-group">
                     <label>
                         <input
                             type="radio"
-                            name="agency"   
+                            name="agency"
                             checked={form.agency === "yes"}
                             onChange={() => setForm({ ...form, agency: "yes" })}
                         />
@@ -81,7 +87,7 @@ function Register() {
                     <label>
                         <input
                             type="radio"
-                            name="agency"   
+                            name="agency"
                             checked={form.agency === "no"}
                             onChange={() => setForm({ ...form, agency: "no" })}
                         />

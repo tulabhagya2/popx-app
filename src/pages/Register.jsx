@@ -34,7 +34,7 @@ function Register() {
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
                     />
-                    <label>Full Name*</label>
+                    <label>Full Name<span className="required">*</span></label>
                 </div>
 
                 <div className="input-group">
@@ -42,7 +42,7 @@ function Register() {
                         value={form.phone}
                         onChange={(e) => setForm({ ...form, phone: e.target.value })}
                     />
-                    <label>Phone number*</label>
+                    <label>Phone Number<span className="required">*</span></label>
                 </div>
 
                 <div className="input-group">
@@ -50,7 +50,7 @@ function Register() {
                         value={form.email}
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
                     />
-                    <label>Email address*</label>
+                    <label>Email Address<span className="required">*</span></label>
                 </div>
 
                 <div className="input-group">
@@ -59,7 +59,7 @@ function Register() {
                         value={form.password}
                         onChange={(e) => setForm({ ...form, password: e.target.value })}
                     />
-                    <label>Password*</label>
+                    <label>Password<span className="required">*</span></label>
                 </div>
 
                 <div className="input-group">

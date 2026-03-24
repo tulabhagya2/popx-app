@@ -139,6 +139,7 @@ p {
 .input-group {
   position: relative;
   margin-bottom: 18px;
+
 }
 
 .input-group input {
@@ -158,6 +159,10 @@ p {
   padding: 0 5px;
   font-size: 11px;
   color: #6c25ff;
+}
+
+.required {
+  color: red;
 }
 
 /* RADIO GROUP */

@@ -266,11 +266,13 @@ input[type="radio"] {
 
 /* DESCRIPTION */
 .desc {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 14px;
   color: #777;
   line-height: 1.6;
   border-bottom: 1px dashed #777;
+  margin-left: -27px;
+  margin-right: -27px;
 
 
 }
@@ -283,4 +285,5 @@ input[type="radio"] {
   border-top: 1px dashed #ccc;
   margin-left: -27px;
   margin-right: -27px;
+
 }
